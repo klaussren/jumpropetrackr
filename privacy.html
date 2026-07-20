@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de privacidad — Contador de Saltos</title>
+<title>Política de privacidad — Jump Rope Tracker</title>
 <link rel="icon" type="image/png" href="assets/01_icon_512x512.png">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -14,43 +14,128 @@
   h1{font-family:'Sora',sans-serif;font-size:2rem;margin-bottom:6px}
   .date{color:var(--muted);font-size:.9rem;margin-bottom:34px}
   h2{font-family:'Sora',sans-serif;font-size:1.15rem;margin:30px 0 10px}
+  h3{font-family:'Sora',sans-serif;font-size:1rem;margin:18px 0 6px;color:var(--text)}
   p,li{color:var(--muted)}
   ul{padding-left:22px}
   a{color:var(--cyan)}
   .back{display:inline-block;margin-bottom:28px;color:var(--cyan);text-decoration:none;font-weight:600}
-  .todo{background:rgba(240,144,47,.12);border:1px solid rgba(240,144,47,.4);border-radius:12px;padding:14px 18px;margin:20px 0;color:#f0b06a;font-size:.92rem}
+  .lang-sep{border:0;border-top:1px solid rgba(255,255,255,.1);margin:56px 0 40px}
+  .lead{color:var(--muted);margin-bottom:8px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <a class="back" href="index.html">← Volver / Back</a>
   <h1>Política de privacidad / Privacy Policy</h1>
-  <p class="date">Última actualización / Last updated: [FECHA]</p>
+  <p class="date">Última actualización / Last updated: 20 de julio de 2026 / July 20, 2026</p>
 
-  <div class="todo">⚠️ PLANTILLA: revisa y completa cada sección según lo que tu app realmente recopila antes de publicarla. Google Play verificará que esta URL sea válida y coherente con tu formulario de "Seguridad de los datos".</div>
+  <!-- ─────────────── ESPAÑOL ─────────────── -->
+  <p class="lead">Gracias por usar Jump Rope Tracker. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tu información cuando usas nuestra aplicación de fitness de salto de cuerda en Android e iOS.</p>
 
-  <h2>1. Información que recopilamos / Information we collect</h2>
-  <p>ES: [Describe qué datos recopila la app: p. ej., datos de entrenamiento (saltos, duración, calorías), ritmo cardíaco desde el smartwatch, y si se almacenan solo en el dispositivo o en servidores.]</p>
-  <p>EN: [Describe what data the app collects: e.g., workout data (jumps, duration, calories), heart rate from the smartwatch, and whether it is stored only on-device or on servers.]</p>
+  <h2>1. Datos que recopilamos</h2>
 
-  <h2>2. Uso de la información / How we use it</h2>
-  <p>ES: [P. ej., los datos se usan únicamente para mostrar tu historial y estadísticas dentro de la app.]</p>
-  <p>EN: [E.g., data is used solely to display your history and statistics inside the app.]</p>
+  <h3>Datos de entrenamiento</h3>
+  <p>Recopilamos los datos de entrenamiento que generas al usar la aplicación: número de saltos, duración, calorías quemadas estimadas, velocidad (saltos por minuto), modo de entrenamiento (Libre, Tiempo, Calorías, Series, Saltos, Series por Tiempo), series completadas y marcas de tiempo de cada sesión. Estos datos se almacenan localmente en tu dispositivo y se usan para mostrar tu historial, estadísticas y logros.</p>
 
-  <h2>3. Datos de salud y sensores / Health & sensor data</h2>
-  <p>ES: [Si usas ritmo cardíaco / sensores de Wear OS o Health Connect, decláralo aquí y explica que no se comparte con terceros.]</p>
-  <p>EN: [If you use heart rate / Wear OS sensors or Health Connect, declare it here and explain it is not shared with third parties.]</p>
+  <h3>Datos de sensores de movimiento</h3>
+  <p>Cuando entrenas usando tu teléfono para contar saltos, la app lee el acelerómetro y el giroscopio del dispositivo en tiempo real para detectar cada salto. Estas lecturas se procesan únicamente en tu dispositivo, no se almacenan ni se transmiten; solo se guarda el conteo de saltos resultante.</p>
 
-  <h2>4. Compartición con terceros / Third-party sharing</h2>
-  <p>ES: [Indica si usas servicios como Google Analytics, Firebase, AdMob, etc. Si no compartes datos, dilo explícitamente.]</p>
-  <p>EN: [State whether you use services like Google Analytics, Firebase, AdMob, etc. If you don't share data, say so explicitly.]</p>
+  <h3>Métricas de salud</h3>
+  <p>Con tu permiso explícito, recopilamos métricas como: frecuencia cardíaca (lpm) medida durante los entrenamientos a través de tu dispositivo Wear OS, nivel de oxígeno en sangre (SpO2) en dispositivos Samsung compatibles, y peso corporal (kg) y edad (años) que ingresas manualmente. Se usan únicamente para calcular estimaciones de calorías y mostrar estadísticas.</p>
 
-  <h2>5. Eliminación de datos / Data deletion</h2>
-  <p>ES: [Explica cómo el usuario puede borrar sus datos: p. ej., desinstalando la app o desde Ajustes → Borrar datos.]</p>
-  <p>EN: [Explain how users can delete their data: e.g., by uninstalling the app or via Settings → Delete data.]</p>
+  <h3>Cámara, micrófono y grabaciones de video</h3>
+  <p>La app incluye una función opcional para grabar tu entrenamiento. Si la activas, se solicita acceso a la cámara y al micrófono y se captura la pantalla del dispositivo mientras entrenas. Tú eliges dónde guardar el video resultante. Nunca recibimos, subimos ni accedemos a estos videos: permanecen solo en el destino que elijas.</p>
 
-  <h2>6. Contacto / Contact</h2>
-  <p>ES/EN: <a href="mailto:soporte@tudominio.com">soporte@tudominio.com</a> [CAMBIA este correo]</p>
+  <h3>Datos de cuenta (Google Sign-In)</h3>
+  <p>Si eliges iniciar sesión con Google, recibimos tu nombre para mostrar, correo electrónico y URL de foto de perfil. Autenticamos tu sesión mediante Firebase Authentication (Google) para asignarte un identificador de usuario estable, personalizar tu perfil y habilitar la sincronización en la nube y las funciones del Club.</p>
+
+  <h3>Datos del Club (funciones sociales)</h3>
+  <p>Cuando inicias sesión y usas la sección Club, tu perfil público (nombre, foto, código de país y estadísticas agregadas de saltos, rachas, récords y logros) se almacena en la nube y puede ser visible para otros usuarios que agregues como amigos o que participen en los mismos desafíos. Los desafíos que creas o a los que te unes también se comparten con sus participantes. Si no inicias sesión, estas funciones permanecen locales en tu dispositivo.</p>
+
+  <h3>Sincronización con Wear OS</h3>
+  <p>Cuando vinculas la app con el reloj compañero Jump Rope Tracker, los datos de entrenamiento y los ajustes (sensibilidad, sonido, volumen) se sincronizan con tu reloj a través de la conexión local Bluetooth/Wi-Fi que provee Google, sin pasar por servidores de terceros.</p>
+
+  <h2>2. Cómo usamos tus datos</h2>
+  <p>Usamos tus datos exclusivamente para: mostrar tu historial y estadísticas, calcular calorías estimadas, impulsar los sistemas de Desafíos, Logros y Club, sincronizar tus datos entre tus dispositivos y personalizar tu experiencia con tu nombre y foto. No usamos tus datos para publicidad ni los vendemos.</p>
+
+  <h2>3. Sincronización en la nube (Firebase)</h2>
+  <p>Cuando inicias sesión con una cuenta, tus entrenamientos, perfil y datos del Club se sincronizan de forma segura mediante Google Firebase (Firestore y Authentication) para estar disponibles en tus dispositivos y habilitar las funciones sociales. Esta sincronización también se rige por la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>. Si usas la app sin iniciar sesión, tus datos permanecen solo en tu dispositivo.</p>
+
+  <h2>4. Integraciones de salud (Health Connect / Apple Health)</h2>
+  <p>En Android, si conectas Health Connect, y en iOS, si conectas Apple Health, tus sesiones de ejercicio, lecturas de frecuencia cardíaca y datos de calorías podrán escribirse en esa plataforma y compartirse con otras apps compatibles que autorices. Puedes revocar estos permisos en cualquier momento desde los ajustes de Health Connect o de la app Salud de Apple.</p>
+
+  <h2>5. Compartición con terceros</h2>
+  <p>No vendemos ni alquilamos tus datos personales. Compartimos datos únicamente en estos casos: (a) con Google Firebase y Google Sign-In para autenticación y sincronización; (b) con otros usuarios del Club que agregas como amigos o con quienes compartes un desafío, que verán tu perfil público y estadísticas; y (c) con las plataformas de salud (Health Connect / Apple Health) que autorices explícitamente.</p>
+
+  <h2>6. Retención y eliminación de datos</h2>
+  <p>Tus datos locales viven en tu dispositivo y los datos sincronizados en tu cuenta de Firebase. Puedes eliminar todos los datos en cualquier momento usando "Restablecer Ajustes" en la app, lo que borra tus datos de entrenamiento y configuración. Desinstalar la app elimina todos los datos locales. Para eliminar los datos asociados a tu cuenta en la nube, contáctanos.</p>
+
+  <h2>7. Tus derechos</h2>
+  <p>Tienes derecho a: acceder a todos tus datos (en Historial, Estadísticas y Club), eliminarlos en cualquier momento, exportarlos contactándonos, revocar permisos de cámara, micrófono, sensores o salud desde los ajustes del sistema, y usar la app de forma anónima sin Google Sign-In.</p>
+
+  <h2>8. Privacidad de menores</h2>
+  <p>Jump Rope Tracker no está dirigido a menores de 13 años. No recopilamos a sabiendas datos de menores de 13 años.</p>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos sobre cambios significativos a través de la app.</p>
+
+  <h2>10. Contacto</h2>
+  <p>Si tienes preguntas sobre esta Política de Privacidad, contáctanos en <a href="mailto:jumpropetrackr@gmail.com">jumpropetrackr@gmail.com</a>. Responderemos a todas las consultas en un plazo de 30 días.</p>
+
+  <hr class="lang-sep">
+
+  <!-- ─────────────── ENGLISH ─────────────── -->
+  <p class="lead">Thank you for using Jump Rope Tracker. This Privacy Policy explains how we collect, use, and protect your information when you use our jump rope fitness app on Android and iOS.</p>
+
+  <h2>1. Data we collect</h2>
+
+  <h3>Workout data</h3>
+  <p>We collect the workout data you generate while using the app: number of jumps, duration, estimated calories burned, speed (jumps per minute), workout mode (Free, Time, Calories, Series, Jumps, Series by Time), completed series, and session timestamps. This data is stored locally on your device and used to display your history, statistics, and achievements.</p>
+
+  <h3>Motion sensor data</h3>
+  <p>When you train using your phone to count jumps, the app reads the device's accelerometer and gyroscope in real time to detect each jump. These readings are processed on your device only; they are not stored or transmitted — only the resulting jump count is saved.</p>
+
+  <h3>Health metrics</h3>
+  <p>With your explicit permission, we collect metrics such as heart rate (BPM) measured during workouts via your Wear OS device, blood oxygen level (SpO2) on supported Samsung devices, and body weight (kg) and age (years) you enter manually. These are used solely to calculate calorie estimates and display statistics.</p>
+
+  <h3>Camera, microphone & video recordings</h3>
+  <p>The app includes an optional feature to record your workout. If enabled, camera and microphone access is requested and the device screen is captured while you train. You choose where to save the resulting video. We never receive, upload, or access these videos — they stay only in the destination you pick.</p>
+
+  <h3>Account data (Google Sign-In)</h3>
+  <p>If you choose to sign in with Google, we receive your display name, email address, and profile photo URL. We authenticate your session through Firebase Authentication (Google) to assign you a stable user identifier, personalize your profile, and enable cloud sync and the Club features.</p>
+
+  <h3>Club data (social features)</h3>
+  <p>When you sign in and use the Club section, your public profile (display name, photo, country code, and aggregated jump, streak, record, and achievement stats) is stored in the cloud and may be visible to other users you add as friends or who join the same challenges. Challenges you create or join are also shared with their participants. If you don't sign in, these features stay local to your device.</p>
+
+  <h3>Wear OS sync data</h3>
+  <p>When you pair the app with a Jump Rope Tracker watch companion, workout data and settings (sensitivity, sound, volume) are synchronized to your watch over the local Bluetooth/Wi-Fi connection provided by Google, without going through third-party servers.</p>
+
+  <h2>2. How we use your data</h2>
+  <p>We use your data exclusively to: display your history and statistics, calculate estimated calories, power the Challenges, Achievements, and Club systems, sync your data across your devices, and personalize your experience with your name and photo. We do not use your data for advertising or sell it.</p>
+
+  <h2>3. Cloud sync (Firebase)</h2>
+  <p>When you sign in with an account, your workouts, profile, and Club data are securely synchronized through Google Firebase (Firestore and Authentication) so they are available across your devices and to enable the social features. This sync is also governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. If you use the app without signing in, your data stays only on your device.</p>
+
+  <h2>4. Health integrations (Health Connect / Apple Health)</h2>
+  <p>On Android, if you connect Health Connect, and on iOS, if you connect Apple Health, your exercise sessions, heart rate readings, and calorie data may be written to that platform and shared with other compatible apps you authorize. You can revoke these permissions at any time in the Health Connect settings or the Apple Health app.</p>
+
+  <h2>5. Third-party sharing</h2>
+  <p>We do not sell or rent your personal data. We share data only in these cases: (a) with Google Firebase and Google Sign-In for authentication and sync; (b) with other Club users you add as friends or share a challenge with, who will see your public profile and stats; and (c) with the health platforms (Health Connect / Apple Health) you explicitly authorize.</p>
+
+  <h2>6. Data retention & deletion</h2>
+  <p>Your local data lives on your device and your synced data in your Firebase account. You can delete all data at any time using "Reset All Settings" in the app, which clears your workout data and configuration. Uninstalling the app removes all local data. To delete the data associated with your cloud account, contact us.</p>
+
+  <h2>7. Your rights</h2>
+  <p>You have the right to: access all your data (in the History, Statistics, and Club screens), delete it at any time, export it by contacting us, revoke camera, microphone, sensor, or health permissions from system settings, and use the app anonymously without Google Sign-In.</p>
+
+  <h2>8. Children's privacy</h2>
+  <p>Jump Rope Tracker is not directed at children under 13. We do not knowingly collect data from children under 13.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app.</p>
+
+  <h2>10. Contact</h2>
+  <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:jumpropetrackr@gmail.com">jumpropetrackr@gmail.com</a>. We will respond to all inquiries within 30 days.</p>
 </div>
 </body>
 </html>
