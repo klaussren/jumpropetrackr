@@ -27,7 +27,9 @@
   }
   .lang button.active{background:var(--cyan);color:#0c2227}
   .lead{color:var(--muted);margin-bottom:8px}
-  [data-lang]{display:none}
+  /* Por defecto se muestra español; el JS oculta/muestra según el idioma.
+     Así el contenido es visible aunque el JavaScript no se ejecute. */
+  [data-lang="en"]{display:none}
 </style>
 </head>
 <body>
