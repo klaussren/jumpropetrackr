@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliminar cuenta — Jump Rope Tracker</title>
+<link rel="icon" type="image/png" href="assets/01_icon_512x512.png">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#16112a;--text:#f4f2fa;--muted:#b8b0cf;--cyan:#63dbe8}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 80px}
+  h1{font-family:'Sora',sans-serif;font-size:2rem;margin-bottom:6px}
+  .date{color:var(--muted);font-size:.9rem;margin-bottom:34px}
+  h2{font-family:'Sora',sans-serif;font-size:1.15rem;margin:30px 0 10px}
+  h3{font-family:'Sora',sans-serif;font-size:1rem;margin:18px 0 6px;color:var(--text)}
+  p,li{color:var(--muted)}
+  ul,ol{padding-left:22px}
+  a{color:var(--cyan)}
+  .topbar{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+  .back{display:inline-block;color:var(--cyan);text-decoration:none;font-weight:600}
+  .lang{margin-left:auto;display:flex;border:1px solid rgba(255,255,255,.18);border-radius:12px;overflow:hidden}
+  .lang button{
+    background:transparent;border:0;color:var(--muted);font:inherit;font-weight:600;
+    padding:7px 14px;cursor:pointer
+  }
+  .lang button.active{background:var(--cyan);color:#0c2227}
+  .lead{color:var(--muted);margin-bottom:8px}
+  .email{font-family:'Sora',sans-serif;font-size:1.1rem}
+  [data-lang="en"]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="index.html"><span data-lang="es">← Volver</span><span data-lang="en">← Back</span></a>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+
+  <h1><span data-lang="es">Eliminar tu cuenta y tus datos</span><span data-lang="en">Delete your account and data</span></h1>
+  <p class="date"><span data-lang="es">App: Jump Rope Tracker · Desarrollador: Klauss Ren</span><span data-lang="en">App: Jump Rope Tracker · Developer: Klauss Ren</span></p>
+
+  <!-- ─────────────── ESPAÑOL ─────────────── -->
+  <div data-lang="es">
+    <p class="lead">Esta página explica cómo solicitar la eliminación de tu cuenta de <strong>Jump Rope Tracker</strong> y de los datos asociados a ella.</p>
+
+    <h2>Cómo solicitar la eliminación</h2>
+    <p>Tenés dos formas de eliminar tus datos:</p>
+    <ol>
+      <li><strong>Datos locales del dispositivo:</strong> abrí la app y andá a <strong>Ajustes → Restablecer ajustes</strong>. Esto borra de inmediato todos los datos de entrenamiento y la configuración guardados en tu dispositivo. Desinstalar la app también elimina todos los datos locales.</li>
+      <li><strong>Cuenta y datos en la nube:</strong> enviá un correo desde la dirección de Google con la que iniciás sesión en la app a
+        <a class="email" href="mailto:jumpropetrackr@gmail.com?subject=Eliminaci%C3%B3n%20de%20cuenta%20-%20Jump%20Rope%20Tracker">jumpropetrackr@gmail.com</a>
+        con el asunto <em>"Eliminación de cuenta"</em>. Procesaremos tu solicitud y eliminaremos tu cuenta y tus datos asociados en un plazo máximo de <strong>30 días</strong>.</li>
+    </ol>
+
+    <h2>Qué datos se eliminan</h2>
+    <p>Al procesar tu solicitud se eliminan de forma permanente:</p>
+    <ul>
+      <li>Tu perfil de cuenta (nombre, correo electrónico y foto obtenidos de Google Sign-In) y tu identificador de usuario.</li>
+      <li>Tus datos de entrenamiento (saltos, duración, calorías, velocidad, modo, series y marcas de tiempo).</li>
+      <li>Tus métricas de salud (frecuencia cardíaca, SpO2, peso y edad).</li>
+      <li>Tu perfil público y estadísticas del Club, tus amistades y los desafíos que hayas creado.</li>
+      <li>El registro de tu suscripción premium.</li>
+      <li>Todos los datos almacenados localmente en tu dispositivo.</li>
+    </ul>
+
+    <h2>Qué datos se conservan</h2>
+    <p>No conservamos tus datos personales después de la eliminación. Ten en cuenta que los registros de transacciones de compra de suscripciones son gestionados por <strong>Google Play</strong> y pueden conservarse en tu cuenta de Google según las políticas y obligaciones legales de Google, ajenas a nuestra app.</p>
+
+    <h2>Contacto</h2>
+    <p>Si tenés dudas sobre la eliminación de tus datos, escribinos a
+      <a href="mailto:jumpropetrackr@gmail.com">jumpropetrackr@gmail.com</a>.
+      Para más detalles sobre cómo tratamos tus datos, consultá nuestra
+      <a href="privacy.html">Política de privacidad</a>.</p>
+  </div>
+
+  <!-- ─────────────── ENGLISH ─────────────── -->
+  <div data-lang="en">
+    <p class="lead">This page explains how to request deletion of your <strong>Jump Rope Tracker</strong> account and the data associated with it.</p>
+
+    <h2>How to request deletion</h2>
+    <p>There are two ways to delete your data:</p>
+    <ol>
+      <li><strong>Local device data:</strong> open the app and go to <strong>Settings → Reset all settings</strong>. This immediately erases all workout data and settings stored on your device. Uninstalling the app also removes all local data.</li>
+      <li><strong>Account and cloud data:</strong> send an email from the Google address you use to sign in to the app to
+        <a class="email" href="mailto:jumpropetrackr@gmail.com?subject=Account%20deletion%20-%20Jump%20Rope%20Tracker">jumpropetrackr@gmail.com</a>
+        with the subject <em>"Account deletion"</em>. We will process your request and delete your account and associated data within <strong>30 days</strong>.</li>
+    </ol>
+
+    <h2>What data is deleted</h2>
+    <p>When your request is processed, the following are permanently deleted:</p>
+    <ul>
+      <li>Your account profile (name, email address and photo from Google Sign-In) and your user ID.</li>
+      <li>Your workout data (jumps, duration, calories, speed, mode, series and timestamps).</li>
+      <li>Your health metrics (heart rate, SpO2, weight and age).</li>
+      <li>Your Club public profile and stats, your friendships and any challenges you created.</li>
+      <li>Your premium subscription record.</li>
+      <li>All data stored locally on your device.</li>
+    </ul>
+
+    <h2>What data is retained</h2>
+    <p>We do not retain your personal data after deletion. Note that subscription purchase transaction records are managed by <strong>Google Play</strong> and may be retained in your Google account under Google's policies and legal obligations, outside of our app.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about deleting your data, contact us at
+      <a href="mailto:jumpropetrackr@gmail.com">jumpropetrackr@gmail.com</a>.
+      For more on how we handle your data, see our
+      <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+</div>
+
+<script>
+  function setLang(lang){
+    if(lang !== 'es' && lang !== 'en') lang = 'es';
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-lang]').forEach(el=>{
+      if(el.getAttribute('data-lang') === lang){
+        el.style.display = el.tagName === 'SPAN' ? 'inline' : 'block';
+      }else{
+        el.style.display = 'none';
+      }
+    });
+    document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    localStorage.setItem('lang', lang);
+  }
+  setLang(localStorage.getItem('lang') || 'es');
+</script>
+</body>
+</html>
