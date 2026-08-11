@@ -162,8 +162,8 @@
     </a>
     <div class="nav-links">
       <a class="hide-m" href="privacy.html" data-i18n="nav_privacy">Política de privacidad</a>
-      <!-- CAMBIA AQUÍ tu correo de soporte -->
-      <a class="hide-m" href="mailto:soporte@tudominio.com" data-i18n="nav_support">Soporte</a>
+      <a href="delete-account.html" data-i18n="nav_delete">Eliminar cuenta</a>
+      <a class="hide-m" href="mailto:jumpropetrackr@gmail.com" data-i18n="nav_support">Soporte</a>
       <div class="lang" role="group" aria-label="Idioma">
         <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
         <button id="btn-en" onclick="setLang('en')">EN</button>
@@ -185,14 +185,15 @@
       <p class="lead" data-i18n="lead">Cada salto cuenta. Contador en vivo, calorías, ritmo cardíaco y retos para construir tu racha día a día.</p>
 
       <div class="stores">
-        <!-- PEGA AQUÍ el link de Google Play (href) -->
+        <!-- ⬇️ PEGA AQUÍ el link de Google Play (reemplaza el # del href) -->
         <a class="store-badge" id="link-play" href="#" aria-label="Google Play">
           <img src="https://cdn.onlytalk.top/img/Play%20Store.svg" alt="Google Play" loading="lazy">
         </a>
-        <!-- PEGA AQUÍ el link de App Store (href) -->
+        <!-- App Store oculto por ahora: descomenta este bloque y pega el link cuando salga en iOS.
         <a class="store-badge" id="link-appstore" href="#" aria-label="App Store">
           <img src="https://cdn.onlytalk.top/img/App%20Store.svg" alt="App Store" loading="lazy">
         </a>
+        -->
       </div>
 
       <span class="watch-chip" data-i18n="watch">⌚ Listo para tu smartwatch · Wear OS</span>
@@ -246,7 +247,8 @@
     <span>© <span id="year"></span> <span data-i18n="brand2">Contador de Saltos</span></span>
     <div class="links">
       <a href="privacy.html" data-i18n="nav_privacy2">Política de privacidad</a>
-      <a href="mailto:soporte@tudominio.com" data-i18n="nav_support2">Soporte</a>
+      <a href="delete-account.html" data-i18n="nav_delete2">Eliminar cuenta y datos</a>
+      <a href="mailto:jumpropetrackr@gmail.com" data-i18n="nav_support2">Soporte</a>
     </div>
   </div>
 </footer>
@@ -257,6 +259,7 @@
     es: {
       brand:"Contador de Saltos", brand2:"Contador de Saltos",
       nav_privacy:"Política de privacidad", nav_privacy2:"Política de privacidad",
+      nav_delete:"Eliminar cuenta", nav_delete2:"Eliminar cuenta y datos",
       nav_support:"Soporte", nav_support2:"Soporte",
       eyebrow:"Contador de saltos de cuerda",
       h1a:"Salta.", h1b:"Cuenta. Repite.",
@@ -272,6 +275,7 @@
     en: {
       brand:"Jump Rope Tracker", brand2:"Jump Rope Tracker",
       nav_privacy:"Privacy Policy", nav_privacy2:"Privacy Policy",
+      nav_delete:"Delete account", nav_delete2:"Delete account & data",
       nav_support:"Support", nav_support2:"Support",
       eyebrow:"Jump rope tracker",
       h1a:"Jump.", h1b:"Track. Repeat.",
